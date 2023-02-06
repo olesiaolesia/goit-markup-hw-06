@@ -472,14 +472,15 @@ button {
     background-color: #31D0AA;
 }
 
+/* ========== FOOTER FORM ========== */
+
+
 .footer-form {
     margin-left: 80px;
-    
 
 }
 
 .footer-subscribe-form {
-    
     margin: 0 auto;
     margin-top: 16px;
     display: flex;
@@ -489,49 +490,42 @@ button {
 .footer-subscribe-input {
     width: 264px;
     min-height: 40px;
-
+    letter-spacing: 0.04em;
+    padding: 8px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--secondary-color);
+    color: rgba(255, 255, 255, 0.6);
+    
+}
 
+.footer-subscribe-input::placeholder {
+    font-size: 12px;
+    line-height: 2.0;
     letter-spacing: 0.04em;
-    /* color: rgba(255, 255, 255, 0.6); */
+    color: rgba(255, 255, 255, 0.6);
+}
 
+.footer-btn {
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer-subscribe-btn {
-    width: 165px;
-    height: 40px;
-    
-    padding-top: 8px;
-    padding-left: 24px;
-    padding-bottom: 8px;
-
+    min-width: 165px;
     letter-spacing: 0.04em;
-    color: #FFFFFF;
-    background: #4D5AE5;
+    color: var(--primary-color);
+    background: var(--secondary-accent-color);
     border-radius: 4px;
     border: none;
-    display: flex;
-}
-
-/* .footer-btn {
-    display: flex;
+    display: inline-flex;
     gap: 16px;
-
-} */
-
-
-.footer-subscribe-icon {
-    /* display: flex;
-    justify-content: space-between; */
-
+    align-items: center;
+    padding: 8px 24px;
+    margin-left: 24px;
 
 }
-
-
-
 
 /* ========== MODAL WINDOW ========== */
 
@@ -590,6 +584,8 @@ button {
     background-color: var(--active-color);
 }
 
+/*========== MODAL FORM ========== */
+
 .modal-title {
     font-weight: 500;
     line-height: 1.5;
@@ -607,18 +603,8 @@ button {
     flex-direction: column;
 }
 
-
-/* .modal-text {
-    font-weight: 500;   
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color); 
-} */
-
-
 .modal-form-field {
     margin-bottom: 8px;
-
 }
 
 .modal-form-input-name {
@@ -743,7 +729,6 @@ button {
     background-color: var(--active-color);
     outline: none;
 }
-
 
 
 /* ========== FILTER ========== */
