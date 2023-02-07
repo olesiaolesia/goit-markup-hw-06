@@ -401,7 +401,6 @@ button {
     background-color: var(--secondary-color);
     padding-top: 100px;
     padding-bottom: 100px;
-    display: flex;
 }
 
 .footer-container {
@@ -496,7 +495,7 @@ button {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--secondary-color);
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--primary-color);
     
 }
 
@@ -510,6 +509,7 @@ button {
 .footer-btn {
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .footer-subscribe-btn {
@@ -524,7 +524,12 @@ button {
     align-items: center;
     padding: 8px 24px;
     margin-left: 24px;
+}
 
+.footer-subscribe-icon {
+    position: absolute;
+    right: 24px;
+    top: 8px;
 }
 
 /* ========== MODAL WINDOW ========== */
@@ -555,7 +560,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 24px;
+    padding: 72px 24px;
 }
 
 .backdrop.is-hidden {
@@ -593,7 +598,6 @@ button {
     letter-spacing: 0.02em;
     color: var(--secondary-color);
 
-    margin-top: 48px;
     text-align: center;
     margin-bottom: 16px;
 }
@@ -640,6 +644,10 @@ button {
     transition: var(--transition-durat-and-funct);
 }
 
+.textarea {
+    margin-bottom: 16px;
+}
+
 .modal-form-input:focus {
     border: 1px solid var(--secondary-accent-color);
     outline: none;
@@ -650,6 +658,7 @@ button {
 }
 
 .modal-form-comment {
+    display: block;
     width: 100%;
     height: 120px;
     resize: none;
