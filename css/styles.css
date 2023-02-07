@@ -425,7 +425,7 @@ button {
 .footer-text {
     color: var(--primary-accent-color);
     margin-top: 16px;
-    max-width: 264px;
+    width: 264px;
 }
 
 .footer-soc {
@@ -549,7 +549,7 @@ button {
 
 .modal {
     width: 408px;
-    height: 584px;
+    min-height: 584px;
     background-color: #FCFCFC; 
     box-shadow: 
     0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -560,7 +560,7 @@ button {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 72px 24px;
+    padding: 72px 24px 24px;
 }
 
 .backdrop.is-hidden {
@@ -599,7 +599,7 @@ button {
     color: var(--secondary-color);
 
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .modal-form {
